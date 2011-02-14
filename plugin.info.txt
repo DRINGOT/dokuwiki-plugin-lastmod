@@ -1,0 +1,7 @@
+base	lastmod
+author	Dennis Ploeger
+email	develop@dieploegers.de
+date	2011-02-14
+name	Lastmod Plugin
+desc	Displays the timestamp of the last modification of the current or another page.
+url		http://wiki.splitbrain.org/plugin:lastmod

@@ -17,20 +17,6 @@ require_once(DOKU_PLUGIN.'syntax.php');
 class syntax_plugin_lastmod extends DokuWiki_Syntax_Plugin {
 
     /**
-     * return some info
-     */
-    function getInfo(){
-        return array(
-            'author' => 'Dennis Ploeger',
-            'email'  => 'develop@dieploegers.de',
-            'date'   => '2008-11-09',
-            'name'   => 'Lastmod Plugin',
-            'desc'   => 'Displays the timestamp of the last modification of the current or another page.',
-            'url'    => 'http://wiki.splitbrain.org/plugin:lastmod',
-        );
-    }
-
-    /**
      * What kind of syntax are we?
      */
     function getType(){
