@@ -58,7 +58,7 @@ class syntax_plugin_lastmod extends DokuWiki_Syntax_Plugin {
 
             preg_match("/:([^~]*)/", $match, $matches);
 
-            $id = getID($matches[1]);
+            $id = $matches[1];
 
             $id_save = $ID;
             $ID = $id;
@@ -71,7 +71,9 @@ class syntax_plugin_lastmod extends DokuWiki_Syntax_Plugin {
 
         } else {
 
-            $lastmod = $INFO['lastmod'];
+            $tmp_info = pageinfo();
+            
+            $lastmod = $tmp_info['lastmod'];
 
         }
     
